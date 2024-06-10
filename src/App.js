@@ -15,7 +15,7 @@ function App() {
     async function fetchListsOfUsers() {
       setloading(true);
       try {
-        const response = await fetch("http://dummyjson.com/users");
+        const response = await fetch("https://dummyjson.com/users");
         const data = await response.json();
 
         if (data && data.users && data.users.length) {

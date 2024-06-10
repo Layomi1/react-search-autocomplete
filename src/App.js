@@ -32,6 +32,10 @@ function App() {
     fetchListsOfUsers();
   }, []);
 
+  if (error) {
+    <div>Error occured! Please, try again later</div>;
+  }
+
   function handleClick(event) {
     setShowDropdown(false);
     setSearchParam(event.target.innerText.toLowerCase());
